@@ -128,10 +128,7 @@ class _PostsListState extends State<PostsList> {
                           itemBuilder: (context, index) {
                             final post = postsToShow[index];
                             // Edit this part to add IconButton to favorite the post
-                            return PostCard(
-                                post: post,
-                                isFavorite: false,
-                                onFavoritePressed: () {});
+                            return PostCard(post: post);
                           },
                         )
                       : const Center(child: Text('No Posts Found'));
