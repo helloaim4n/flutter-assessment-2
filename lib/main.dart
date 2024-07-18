@@ -1,10 +1,10 @@
+import 'package:assessment_2_app/providers/app_state.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'screens/home.dart';
 import 'screens/posts_list.dart';
 import 'screens/user_profile.dart';
 import 'screens/favorite.dart';
-import 'providers/app_state.dart';
 import 'utils/theme.dart';
 
 void main() {
@@ -17,8 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) =>
-          AppState(), // Replace MyProvider with your own provider class
+      create: (_) => AppState(),
       child: MaterialApp(
         title: 'Flutter App',
         theme: AppTheme.lightTheme, // Apply the theme here
