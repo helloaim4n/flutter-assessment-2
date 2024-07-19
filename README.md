@@ -12,7 +12,7 @@ To run this Flutter application, follow these steps:
 
    - Clone the repository to your local machine using Git:
      ```
-     git clone [<repository_url>](https://github.com/helloaim4n/flutter-assessment-2.git)
+     git clone https://github.com/helloaim4n/flutter-assessment-2.git
      ```
 
 3. **Navigate to the Project Directory:**
