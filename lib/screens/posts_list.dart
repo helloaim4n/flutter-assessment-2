@@ -13,6 +13,7 @@ class PostsList extends StatefulWidget {
 class _PostsListState extends State<PostsList> {
   late Future<List<Post>> futurePosts;
   List<Post> filteredPosts = [];
+  List<Post> favoritePosts = [];
   TextEditingController searchController = TextEditingController();
   bool isSearchExpanded = false;
 
@@ -127,7 +128,6 @@ class _PostsListState extends State<PostsList> {
                           itemCount: postsToShow.length,
                           itemBuilder: (context, index) {
                             final post = postsToShow[index];
-                            // Edit this part to add IconButton to favorite the post
                             return PostCard(post: post);
                           },
                         )
