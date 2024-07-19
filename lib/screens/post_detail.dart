@@ -56,14 +56,14 @@ class PostDetail extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Divider(),
-                // Make text 'Comment' bold and show on left side
                 const Padding(
-                  padding: EdgeInsets.all(10),
+                  padding: EdgeInsets.all(16),
                   child: Row(
                     children: [
+                      Icon(Icons.comment),
+                      SizedBox(width: 8),
                       Text(
-                        'Comments',
+                        ' Comments',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -72,7 +72,6 @@ class PostDetail extends StatelessWidget {
                     ],
                   ),
                 ),
-
                 Expanded(
                   child: FutureBuilder<List<Comment>>(
                     future: fetchComments(post.id),
