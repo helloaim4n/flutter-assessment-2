@@ -7,10 +7,10 @@ class PostsList extends StatefulWidget {
   const PostsList({super.key});
 
   @override
-  _PostsListState createState() => _PostsListState();
+  PostsListState createState() => PostsListState();
 }
 
-class _PostsListState extends State<PostsList> {
+class PostsListState extends State<PostsList> {
   late Future<List<Post>> futurePosts;
   List<Post> filteredPosts = [];
   List<Post> favoritePosts = [];
