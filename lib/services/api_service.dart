@@ -4,6 +4,7 @@ import '../models/user.dart';
 import '../models/post.dart';
 import '../models/comment.dart';
 
+// Fetch all posts
 Future<List<Post>> fetchPosts() async {
   final response =
       await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
@@ -16,6 +17,7 @@ Future<List<Post>> fetchPosts() async {
   }
 }
 
+// Fetch comment for specific post
 Future<List<Comment>> fetchComments(int postId) async {
   final response = await http.get(Uri.parse(
       'https://jsonplaceholder.typicode.com/comments?postId=$postId'));
@@ -28,6 +30,7 @@ Future<List<Comment>> fetchComments(int postId) async {
   }
 }
 
+// Fetch a specific user
 Future<User> fetchUser(int userId) async {
   final response = await http
       .get(Uri.parse('https://jsonplaceholder.typicode.com/users/$userId'));
