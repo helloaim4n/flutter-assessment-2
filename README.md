@@ -1,7 +1,3 @@
-# assessment_2_app
-
-A new Flutter project.
-
 ## Getting Started
 
 # Running the Flutter Application
@@ -16,7 +12,7 @@ To run this Flutter application, follow these steps:
 
    - Clone the repository to your local machine using Git:
      ```
-     git clone <repository_url>
+     git clone https://github.com/helloaim4n/flutter-assessment-2.git
      ```
 
 3. **Navigate to the Project Directory:**
@@ -39,20 +35,6 @@ To run this Flutter application, follow these steps:
    - Launch the application using the following command:
      ```
      flutter run
-     ```
-
-6. **Testing:**
-
-   - To run tests, use the following command:
-     ```
-     flutter test
-     ```
-
-7. **Building the Application:**
-
-   - For building the application, use the command:
-     ```
-     flutter build <platform>
      ```
      Replace `<platform>` with the desired platform (e.g., `android`, `ios`).
 
