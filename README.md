@@ -36,8 +36,6 @@ To run this Flutter application, follow these steps:
      ```
      flutter run
      ```
-     Replace `<platform>` with the desired platform (e.g., `android`, `ios`).
 
 8. **Additional Information:**
    - For more detailed instructions or troubleshooting, refer to the official Flutter documentation.
-# flutter-assessment-2
