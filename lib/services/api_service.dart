@@ -17,8 +17,8 @@ Future<List<Post>> fetchPosts() async {
 }
 
 Future<List<Comment>> fetchComments(int postId) async {
-  final response = await http.get(
-      Uri.parse('https://jsonplaceholder.typicode.com/posts/$postId/comments'));
+  final response = await http.get(Uri.parse(
+      'https://jsonplaceholder.typicode.com/comments?postId=$postId'));
 
   if (response.statusCode == 200) {
     List jsonResponse = json.decode(response.body);
